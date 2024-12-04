@@ -17,3 +17,22 @@ docker-compose up
 
 RUNNING TESTING UNIT
 docker-compose run --rm app sh -c "python manage.py test"
+
+TESTING CLASSES
+SimpleTestCase and TestCase
+
+MOCKING TESTING
+Library : unittest.mock
+ * MagicMock/Mock - Replace real objects
+ * patch - overrides code for tests
+
+
+ TESTING WEB REQUETTES
+ from rest_framework.test import APIClient
+
+
+* Les methodes de test ne doit commencer que test_
+* Lors ce qu'on fait des tests dans le meme repertoire on ne doit pas avec un fichier tests.py et un repertoire tests
+
+
+CONFIGURE DATABASE
