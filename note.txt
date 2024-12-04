@@ -1,0 +1,19 @@
+docker-compose run --rm app sh -c "flake8"
+
+That's will help us to see error on console
+
+Testing 
+Django test suite
+
+docker-compose run --rm app sh -c "python manage.py test"
+
+
+Creating django project
+docker-compose run --rm app sh -c "django-admin startproject app ."
+
+
+START HOW app
+docker-compose up
+
+RUNNING TESTING UNIT
+docker-compose run --rm app sh -c "python manage.py test"
