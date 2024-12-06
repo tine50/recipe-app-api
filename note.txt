@@ -36,3 +36,30 @@ Library : unittest.mock
 
 
 CONFIGURE DATABASE
+
+os.environ.get("DB_HOST")
+
+Psycopg2
+    * Most popular PostgresSQL adaptor for python
+    * Supported by Django
+    * Compiles from source
+    * Required addintional dependencies
+    * Easy to install with Docker
+     
+
+Psycopg2-binary
+    * Of for development
+    * Not good for production
+
+
+Installing Psycopg2
+    ° List of package dependencies in docs
+        * C compiler
+        * python3-dev
+        * libpq-dev
+    ° Equivalent packages for alpine
+        * postgresql-client
+        * build-base
+        * postgresql-dev
+        * musl-dev
+    ° Found by searching and trial and error
